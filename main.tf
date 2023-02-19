@@ -4,7 +4,7 @@ module "lambda_functions" {
   function_configurations = [
     {
       function_name   = "function1"
-      handler         = "function1.lamda_handler"
+      handler         = "function1.lambda_handler"
       runtime         = "python3.8"
       code_directory  = "function1"
     },
