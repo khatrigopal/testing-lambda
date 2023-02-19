@@ -3,4 +3,8 @@ def lambda_handler (event, context):
    print ("Welome to Persistent")
    print ("Testing Done")
    print ("Welcome")
+   print ("Welcome to Second Lambda Fumction Pipeline")
+   print ("Welome to Persistent")
+   print ("Testing Done")
+   print ("Welcome")
    
