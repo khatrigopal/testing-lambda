@@ -6,13 +6,13 @@ module "lambda_functions" {
       function_name   = "function1"
       handler         = "lambda_function1.handler"
       runtime         = "python3.8"
-      code_directory  = "/path/to/function1/code/directory"
+      code_directory  = "function1"
     },
     {
       function_name   = "function2"
       handler         = "lambda_function2.handler"
       runtime         = "python3.8"
-      code_directory  = "/path/to/function2/code/directory"
+      code_directory  = "function2"
     }
   ]
 }
