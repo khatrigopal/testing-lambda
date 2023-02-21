@@ -14,7 +14,8 @@ output "lambda_functions" {
 resource "aws_lambda_function" "lambda_functions" {
   for_each        = { for c in var.function_configurations : c.function_name => c }
   function_name   = each.value.function_name
-  role            = "arn:aws:iam::558940753150:role/lambda-full-acces"
+  #role            = "arn:aws:iam::558940753150:role/lambda-full-acces"
+  role            = "arn:aws:iam::558940753150:role/lambda_custom_role"
   handler         = each.value.handler
   #handler         = each.value.lamdba_handler  
   runtime         = each.value.runtime
