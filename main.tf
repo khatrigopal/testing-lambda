@@ -7,12 +7,14 @@ module "lambda_functions" {
       handler         = "function1.lambda_handler"
       runtime         = "python3.8"
       code_directory  = "function1"
+      memory_size        = "128"
     },
     {
       function_name   = "function2"
       handler         = "function2.lambda_handler"
       runtime         = "python3.8"
       code_directory  = "function2"
+      memory_size        = "128"
     }
   ]
 }
