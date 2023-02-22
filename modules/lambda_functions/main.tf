@@ -1,8 +1,6 @@
 
 
-output "lambda_functions" {
-  value = { for c in var.function_configurations : c.function_name => aws_lambda_function.lambda_functions[c.function_name] }
-}
+
 
 resource "aws_lambda_function" "lambda_functions" {
   for_each        = { for c in var.function_configurations : c.function_name => c }
