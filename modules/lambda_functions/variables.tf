@@ -4,5 +4,6 @@ variable "function_configurations" {
     handler         = string
     runtime         = string
     code_directory  = string
+    memory_size = number
   }))
 }
