@@ -4,7 +4,7 @@ variable "function_configurations" {
     handler         = string
     runtime         = string
     code_directory  = string
-    layer_arn = string
+    layers = string
     memory_size = number
   }))
 }
