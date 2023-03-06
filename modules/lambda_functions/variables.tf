@@ -7,3 +7,7 @@ variable "function_configurations" {
     memory_size = number
   }))
 }
+
+variable "layer_arn" {
+  type = string
+}
