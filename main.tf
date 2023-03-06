@@ -7,6 +7,7 @@ module "lambda_functions" {
       handler         = "function1.lambda_handler"
       runtime         = "python3.8"
       code_directory  = "function1"
+      layers = "arn:aws:lambda:us-east-1:558940753150:layer:my_layer_2:3"
       memory_size        = 128
     },
     {
@@ -14,6 +15,7 @@ module "lambda_functions" {
       handler         = "function2.lambda_handler"
       runtime         = "python3.8"
       code_directory  = "function2"
+      layers = "arn:aws:lambda:us-east-1:558940753150:layer:my_layer_2:3"
       memory_size        = 128
     }
   ]
