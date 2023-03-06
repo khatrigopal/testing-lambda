@@ -64,7 +64,3 @@ variable "test_name" {
 
 ##############
   
-variable "layer_arn" {
-  type = string
-  default = ""
-}
