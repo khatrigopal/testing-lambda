@@ -10,7 +10,7 @@ resource "aws_lambda_function" "lambda_functions" {
   handler         = each.value.handler
   #handler         = each.value.lamdba_handler  
   runtime         = each.value.runtime
-  layers = [each.value.layer_arn]
+  layers =          each.value.layers
   memory_size        = each.value.memory_size
   source_code_hash = filebase64sha256(data.archive_file.lambda_functions[each.key].output_path)
   filename        = data.archive_file.lambda_functions[each.key].output_path
