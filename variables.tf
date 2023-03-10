@@ -64,3 +64,6 @@ variable "test_name" {
 
 ##############
   
+variable "layers" {
+  description = "The name"
+  default        = ""
