@@ -5,8 +5,8 @@ variable "function_configurations" {
     runtime         = string
     code_directory  = string
     role = string
-    #layers = string
-    layer_arn = string
+    layers = string
+    #layer_arn = string
     memory_size = number
   }))
 }
