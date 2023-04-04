@@ -9,7 +9,7 @@ module "lambda_functions" {
       code_directory  = "function1"
       #layer_arn = "arn:aws:lambda:us-east-1:558940753150:layer:my_layer_2:3"
       #layers = "arn:aws:lambda:us-east-1:558940753150:layer:my_layer_1:5"
-       layers = "data.terraform_remote_state.networking.outputs.layer_1_arn"
+       layers = "data.terraform_remote_state.networking.output.layer_1_arn"
       role = "arn:aws:iam::558940753150:role/lambda_custom_role"
       memory_size        = 128
     }
